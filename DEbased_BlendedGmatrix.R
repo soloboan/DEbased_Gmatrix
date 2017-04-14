@@ -68,7 +68,6 @@ DEbased_BlendedG <- function(DEresults,inpGeno,DEsample1,DEsample2,kbdist,wgtcol
       }
     }
     
-    
     DEGene_markerinfo <- rbind.data.frame(DEGene_markerinfo,maxDE_snp)
     if(DEMname %% iterchecks==0){cat('... ',DEMname,' ... out of ',length(DEG_gt1),' ...\n')}
     rm(maxDE_snp)
@@ -167,6 +166,6 @@ DEbased_BlendedG <- function(DEresults,inpGeno,DEsample1,DEsample2,kbdist,wgtcol
   Gmat <- list(IDs=idsgeno,G_DE=G_DE,G_poly=G_poly,
                G=G_DEploy,Ginv=G_DEployinv,
                G_asreml=G_asreml,Ginv_asreml=Ginv_asreml)
-  unlink(recursive=T,x=c('*.log','*.nosex','*.raw'))
+  unlink(recursive=T,x=c('*.log','*.nosex','*.raw','recodeallele.txt'))
   return(Gmat)
 }
