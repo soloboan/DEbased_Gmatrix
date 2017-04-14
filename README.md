@@ -32,3 +32,19 @@ wgtcolumn         ==> The weight to use (eg. Log_2FC or p-value or q-value)
 s_tau=0.90        ==> blend the weighted matrix to polygenic matrix (s*G_D + 1-s*Gpolygenic)  
 svalue_diagG      ==> small value to add to diagonals of G (stability and inversion problem)  
 outname           ==> output name of matrix and asreml format G matrix and inverse  
+
+
+### output 
+
+- The script will give you the G matrix for the Blended DE G and Polygynic G  
+- R object (This is a list) with the 
+    - Orginal IDs
+    - DE based G matrix
+    - G matrix based on non-DE based markers
+    - Blended G matrix 
+    - Blended G inverse
+    
+    
+
+
+
