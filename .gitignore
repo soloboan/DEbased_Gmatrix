@@ -2,7 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
-.plink.exe
-.prettify.exe
+/*.exe
 /*.grm
 /*.giv
