@@ -1,6 +1,6 @@
 ### Creating G matrix based on Differential Expression information  
 #### SNP markers are weighted based on their location to a gene and the Log2 Fold change in gene expression of those genes   
-##### script requires plin for extract markers and converting alleles to genotypes
+##### script requires plink to extract markers and convert alleles to genotypes
 
                           s*G_DE + (1-s)*G_polygenic  
 
