@@ -142,7 +142,7 @@ DEbased_BlendedG <- function(DEresults,inpGeno,DEsample1,DEsample2,kbdist,wgtcol
   diag(G_DEploy) <- diag(G_DEploy)+svalue_diagG
   
   cat('... Inverting Blended G-matrix ...\n')
-  G_DEployinv <- ginv(G_DEploy)
+  G_DEployinv <- solve(G_DEploy)
   
   cat('\n... Exporting G and G inverse in asreml format ...\n')
   Glist <- as.data.frame(which(row(G_DEploy)>=col(G_DEploy),arr.ind=TRUE))
